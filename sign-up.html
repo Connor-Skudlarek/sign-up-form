@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up!</title>
+    <link rel="stylesheet" href="sign-up-styles.css" />
+  </head>
+  <body>
+    <div class="main-images-container">
+      <div class="main-image">
+        <img
+          src="./images/halie-west-25xggax4bSA-unsplash.jpg"
+          alt="A close up picture of a green jungle-like plant, showing several wet leaves."
+        />
+      </div>
+      <div class="logo-container">
+        <div class="logo">
+          <img
+            class="logo-image"
+            src="./images/odin-lined.png"
+            alt="Logo of the ODIN Project."
+          />
+          <p class="logo-text">ODIN</p>
+        </div>
+      </div>
+      <p>
+        Photo by
+        <a
+          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Halie West</a
+        >
+        on
+        <a
+          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+    <div class="sign-up-area">
+      <div class="call-to-action">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br />Sign
+          up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="sign-up-container">
+        <p>Let's do this!</p>
+        <form action="/SERVER/" method="POST" id="create-account">
+          <label for="firstName"
+            >FIRST NAME<input id="firstName" name="firstName" type="text"
+          /></label>
+          <label for="lastName"
+            >LAST NAME<input id="lastName" name="lastName" type="text"
+          /></label>
+          <label for="email"
+            >EMAIL<input id="email" name="email" type="email"
+          /></label>
+          <label for="phone"
+            >PHONE NUMBER<input id="phone" name="phone" type="tel"
+          /></label>
+          <label for="pwd1"
+            >PASSWORD<input id="pwd1" name="pwd1" type="password" />CONFIRM
+            PASSWORD</label
+          >
+          <label for="pwd2"
+            ><input id="pwd2" name="pwd2" type="password"
+          /></label>
+        </form>
+      </div>
+      <div class="login-container">
+        <button type="submit" form="create-account">Create Account</button>
+        <p>Already have an account? <a>Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>

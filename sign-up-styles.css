@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.main-image-container {
+  flex: auto;
+}
+
+.main-image > img {
+  width: 100%;
+  height: 100vh;
+  display: inline-block;
+}
+
+div.logo-container {
+  background-color: rgba(65, 65, 65, 0.5);
+  padding: 150px 0px;
+}
+
+.logo-image {
+  flex: auto;
+}
+
+.logo-text {
+  flex: auto;
+}
+
+.sign-up-area {
+  width: 60%;
+  flex: auto;
+  display: flex;
+  flex-grow: 3;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.call-to-action,
+.sign-up-container,
+.login-container {
+  flex-grow: 1;
+}
