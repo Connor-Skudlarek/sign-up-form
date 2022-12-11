@@ -3,31 +3,56 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("fonts/Norse-Bold.woff2") format("woff2");
+}
+
+.content {
+  position: relative;
+}
+
 body {
   display: flex;
 }
 
 .main-image-container {
-  flex: auto;
+  flex: 1 1 0;
+  width: 40%;
+  position: relative;
 }
 
 .main-image > img {
-  width: 100%;
+  width: 40vw;
   height: 100vh;
-  display: inline-block;
 }
 
-div.logo-container {
+.logo-container {
   background-color: rgba(65, 65, 65, 0.5);
-  padding: 150px 0px;
+  padding: 0 20vw 0 20vw;
+  position: absolute;
+  width: 0px;
+  top: 20%;
+  left: 0;
+  color: white;
 }
 
 .logo-image {
-  flex: auto;
+  position: relative;
+  width: 100px;
+  display: inline-block;
+  left: -10vw;
+  top: 3vh;
 }
 
 .logo-text {
-  flex: auto;
+  position: relative;
+  font-size: 85px;
+  width: 450px;
+  left: -5vw;
+  top: -5vh;
+  margin: 0 30px;
+  font-family: "Norse-Bold";
 }
 
 .sign-up-area {
@@ -37,10 +62,17 @@ div.logo-container {
   flex-grow: 3;
   flex-direction: column;
   height: 100vh;
+  margin: auto;
 }
 
 .call-to-action,
 .sign-up-container,
 .login-container {
   flex-grow: 1;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+#create-account {
+  width: 70%;
 }
