@@ -14,12 +14,17 @@
 
 body {
   display: flex;
+  height: 100vh;
 }
 
-.main-image-container {
+.main-images-container {
   flex: 1 1 0;
   width: 40%;
   position: relative;
+}
+
+.main-image {
+    height: 100vh;
 }
 
 .main-image > img {
@@ -75,4 +80,16 @@ body {
 
 #create-account {
   width: 70%;
+}
+
+.photo-credit {
+    height: 0;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    color: rgb(159, 157, 157);
+}
+
+.photo-credit a {
+    color: white;
 }
