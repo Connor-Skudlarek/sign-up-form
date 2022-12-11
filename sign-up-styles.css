@@ -24,7 +24,7 @@ body {
 }
 
 .main-image {
-    height: 100vh;
+  height: 100vh;
 }
 
 .main-image > img {
@@ -33,7 +33,7 @@ body {
 }
 
 .logo-container {
-  background-color: rgba(65, 65, 65, 0.5);
+  background-color: rgba(0, 0, 0, 0.35);
   padding: 0 20vw 0 20vw;
   position: absolute;
   width: 0px;
@@ -74,22 +74,32 @@ body {
 .sign-up-container,
 .login-container {
   flex-grow: 1;
-  margin-left: 50px;
-  margin-right: 100px;
+  margin: 100px 50px 25px 125px;
+}
+
+.call-to-action {
+  font-size: 24px;
+  margin-right: min(200px, 20vw);
+  font-family: helvetica, sans-serif;
+  font-weight: bold;
 }
 
 #create-account {
-  width: 70%;
+  width: 90%;
 }
 
 .photo-credit {
-    height: 0;
-    position: absolute;
-    bottom: 3%;
-    left: 3%;
-    color: rgb(159, 157, 157);
+  height: 0;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  color: rgb(195, 195, 195);
 }
 
 .photo-credit a {
-    color: white;
+  color: white;
+}
+
+.convincing-statement {
+  margin-top: 50px;
 }
